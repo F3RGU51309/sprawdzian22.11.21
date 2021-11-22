@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>  <script>
+
+        function show() {
+
+            let o1 = document.getElementById('o1').value;
+            let w1 = document.getElementById('w1').value;
+            let o2 = document.getElementById('o2').value;
+            let w2 = document.getElementById('w2').value;
+            let o3 = document.getElementById('o3').value;
+            let w3 = document.getElementById('w3').value;
+            let o4 = document.getElementById('o4').value;
+            let w4 = document.getElementById('w4').value;
+            let o5 = document.getElementById('o5').value;
+            let w5 = document.getElementById('w5').value;
+            var ow = [o1,o2,o3,o4,o5, w1,w2,w3,w4,w5];
+            
+            var w = ow[5]+ow[6]+ow[7]+ow[8]+ow[9];
+var srednia = (ow[0]*ow[5] + ow[1]*ow[6] + ow[2]*ow[7] + ow[3]*ow[8] + ow[4]*ow[9])/w;
+            
+            alert('Srednia: ' + srednia);
+
+        }
+ </script>
+</head>
+<body>
+
+    <input type="form" input="test1" placeholder="Wpisz 1 ocene" id="o1">
+    <br>
+    <input type="form" input="test2" placeholder="Waga tej oceny" id="w1">
+    <br>
+    <input type="form" input="test3" placeholder="Wpisz 2 ocene" id="o2">
+    <br>
+    <input type="form" input="test4" placeholder="Waga tej oceny" id="w2">
+    <br>  
+    <input type="form" input="test5" placeholder="Wpisz 3 ocene" id="o3">
+    <br>
+    <input type="form" input="test6" placeholder="Waga tej oceny" id="w3">
+    <br>
+    <input type="form" input="test7" placeholder="Wpisz 4 ocene" id="o4">
+    <br>
+    <input type="form" input="test8" placeholder="Waga tej oceny" id="w4">
+    <br> 
+    <input type="form" input="test9" placeholder="Wpisz 5 ocene" id="o5">
+    <br>
+    <input type="form" input="test10" placeholder="Waga tej oceny" id="w5">
+    <br>  
+    <br>
+    <input type="button" onclick="show()" value="Licz srednia">
+
+</body>
+</html>
